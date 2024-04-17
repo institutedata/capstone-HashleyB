@@ -3,8 +3,11 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const authRoute = require("./routes/authRoute");
-const userRoute = require("./routes/userRoute");
+const authRoutes = require("./routes/authRoutes");
+const userRoutes = require("./routes/userRoutes");
+const exerciseRoutes = require("./routes/exerciseRoutes");
+const clientProfileRoutes = require("./routes/clientProfileRoutes");
+const trainingSessionRoutes = require("./routes/trainingSessionRoutes");
 
 // middlewares
 app.use(express.json());
@@ -15,8 +18,11 @@ app.post('/', (req, res) => {
 });
 
 // routes
-app.use("/api/auth", authRoute);
-app.use("/api/user", userRoute);
+app.use("/auth", authRoutes);
+app.use("/user", userRoutes);
+app.use("/exercise", exerciseRoutes);
+app.use("/client-profile", clientProfileRoutes);
+app.use("/training-session", trainingSessionRoutes);
 
 
 // set port, listen for requests

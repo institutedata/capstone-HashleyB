@@ -1,0 +1,35 @@
+.exercise-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+  }
+  
+  .exercise-list-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .exercise-list-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercise-list-container li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .exercise-list-container li p {
+    margin: 5px 0;
+  }
+  
+  .exercise-list-container li p:first-child {
+    font-weight: bold;
+  }
+  
+  

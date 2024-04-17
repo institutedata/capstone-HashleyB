@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './chat.css'; // Import CSS file for custom styling
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -27,14 +28,15 @@ const Chat = () => {
           </div>
         ))}
       </div>
-      <form onSubmit={handleMessageSubmit}>
+      <form onSubmit={handleMessageSubmit} className="input-container">
         <input
           type="text"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Type your message..."
+          className="input-field"
         />
-        <button type="submit">Send</button>
+        <button type="submit" className="send-btn">Send</button>
       </form>
     </div>
   );
