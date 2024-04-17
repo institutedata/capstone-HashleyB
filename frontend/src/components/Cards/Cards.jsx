@@ -9,37 +9,36 @@ const Cards = () => {
                 <ul className="cards__items">
                     <CardItem 
                     src="src/images/deadlift.jpg"
-                    text="Explore the workout library"
+                    text="Explore the workout library and create your own workouts"
                     label='Fitness'
                     path='/fitness'
                     />
                     <CardItem 
-                    src="src/images/nutrition.webp"
-                    text="Explore the nutrition library"  
-                    label='Nutrition'
-                    path='/nutrition'
+                    src="src/images/pt.webp"
+                    text="Add new profiles and manage your existing ones"  
+                    label='Clients'
+                    path='/clients'
                     />
                 </ul>
                 <ul className="cards__items">
                     <CardItem 
-                    src="src/images/Messaging.webp"
-                    text="Keep in touch with your trainer. Ask questions and get feedback."
-                    label='Messages'
-                    path='/messages'
+                    src="src/images/chat.webp"
+                    text="Keep in touch with your clients. Give them advice and motivation"
+                    label='Chat with clients'
+                    path='/chat'
                     />
                     <CardItem 
-                    src="src/images/calendar.jpg"
-                    text="Book and manage your training sessions"  
-                    label='Calendar'
-                    path='/calendar'
+                    src="src/images/clock.jpeg"
+                    text="Book and manage your consultations and training sessions"  
+                    label='Planner'
+                    path='/planner'
                     />
                     <CardItem 
-                    src="src/images/payment.png"
-                    text="View and manage your payments"  
-                    label='payments'
-                    path='/invoices'
+                    src="src/images/fitnesschal.png"
+                    text="View and post challenges for your clients to participate in"  
+                    label='Challenges'
+                    path='/challenges'
                     />
-                    
                 </ul>
             </div>
             </div>
