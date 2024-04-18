@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./profile.css";
 
 const ProfileList = () => {
   const [profiles, setProfiles] = useState([]);
@@ -31,14 +32,14 @@ const ProfileList = () => {
   };
 
   return (
-    <div>
-      <h2>Saved Client Profiles</h2>
+    <div className="profile-list-container">
+      <h2 className="profile-list-header">Contacts</h2>
       {profiles.map(profile => (
-        <div key={profile._id}>
+        <div className="profile-item" key={profile._id}>
           <p><strong>Name:</strong> {profile.name}</p>
           <p><strong>Contact:</strong> {profile.contact}</p>
-          <button onClick={() => handleDelete(profile._id)}>Delete</button>
-          <hr />
+          <button className="delete-btn" onClick={() => handleDelete(profile._id)}>Delete</button>
+          <hr className="profile-divider" />
         </div>
       ))}
     </div>

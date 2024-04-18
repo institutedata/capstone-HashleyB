@@ -46,49 +46,49 @@ const InputForm = ({ onProfileCreated }) => {
 
   return (
     <div className="input-form-container">
-      <h2>Client Profile Form</h2>
+      <h2>Add new client info</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
+          <label htmlFor="name" className="label">Name:</label>
+          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="contact">Contact:</label>
-          <input type="text" id="contact" name="contact" value={formData.contact} onChange={handleChange} />
+          <label htmlFor="contact" className="label">Contact:</label>
+          <input type="text" id="contact" name="contact" value={formData.contact} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} />
+          <label htmlFor="email" className="label">Email:</label>
+          <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="age">Age:</label>
-          <input type="number" id="age" name="age" value={formData.age} onChange={handleChange} />
+          <label htmlFor="age" className="label">Age:</label>
+          <input type="number" id="age" name="age" value={formData.age} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="weight">Weight:</label>
-          <input type="number" id="weight" name="weight" value={formData.weight} onChange={handleChange} />
+          <label htmlFor="weight" className="label">Weight:</label>
+          <input type="number" id="weight" name="weight" value={formData.weight} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="height">Height:</label>
-          <input type="number" id="height" name="height" value={formData.height} onChange={handleChange} />
+          <label htmlFor="height" className="label">Height:</label>
+          <input type="number" id="height" name="height" value={formData.height} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="goals">Goals:</label>
-          <input type="text" id="goals" name="goals" value={formData.goals} onChange={handleChange} />
+          <label htmlFor="goals" className="label">Goals:</label>
+          <input type="text" id="goals" name="goals" value={formData.goals} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="injuries">Injuries:</label>
-          <input type="text" id="injuries" name="injuries" value={formData.injuries} onChange={handleChange} />
+          <label htmlFor="injuries" className="label">Injuries:</label>
+          <input type="text" id="injuries" name="injuries" value={formData.injuries} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="preferences">Preferences:</label>
-          <input type="text" id="preferences" name="preferences" value={formData.preferences} onChange={handleChange} />
+          <label htmlFor="preferences" className="label">Preferences:</label>
+          <input type="text" id="preferences" name="preferences" value={formData.preferences} onChange={handleChange} className="input-field" />
         </div>
         <div className="form-group">
-          <label htmlFor="restrictions">Restrictions:</label>
-          <input type="text" id="restrictions" name="restrictions" value={formData.restrictions} onChange={handleChange} />
+          <label htmlFor="restrictions" className="label">Restrictions:</label>
+          <input type="text" id="restrictions" name="restrictions" value={formData.restrictions} onChange={handleChange} className="input-field" />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-btn">Submit</button>
       </form>
     </div>
   );

@@ -2,7 +2,7 @@ import Cards from "../Cards/Cards";
 
 const Main = () => {
   return (
-      <div ><h2>Manage your personal training business</h2>
+      <div><h2>Database App for Personal training business</h2>
       <Cards />
     </div>
   );

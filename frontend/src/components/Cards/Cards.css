@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background: orangered
+    background: rgb(235, 234, 234);
   }
   
   h1 {
@@ -19,12 +19,12 @@
   .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
-    background-color: orangered;
+    background-color: rgb(235, 234, 234);
   }
   
   .cards__items {
     margin-bottom: 24px;
-    background-color: orangered;
+    background-color: rgb(235, 234, 234);
   }
   
   .cards__item {
