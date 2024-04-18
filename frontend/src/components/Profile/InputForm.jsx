@@ -50,43 +50,43 @@ const InputForm = ({ onProfileCreated }) => {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name" className="label">Name:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="input-field" />
+          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="contact" className="label">Contact:</label>
-          <input type="text" id="contact" name="contact" value={formData.contact} onChange={handleChange} className="input-field" />
+          <input type="text" id="contact" name="contact" value={formData.contact} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="email" className="label">Email:</label>
-          <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} className="input-field" />
+          <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="age" className="label">Age:</label>
-          <input type="number" id="age" name="age" value={formData.age} onChange={handleChange} className="input-field" />
+          <input type="number" id="age" name="age" value={formData.age} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="weight" className="label">Weight:</label>
-          <input type="number" id="weight" name="weight" value={formData.weight} onChange={handleChange} className="input-field" />
+          <input type="number" id="weight" name="weight" value={formData.weight} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="height" className="label">Height:</label>
-          <input type="number" id="height" name="height" value={formData.height} onChange={handleChange} className="input-field" />
+          <input type="number" id="height" name="height" value={formData.height} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="goals" className="label">Goals:</label>
-          <input type="text" id="goals" name="goals" value={formData.goals} onChange={handleChange} className="input-field" />
+          <input type="text" id="goals" name="goals" value={formData.goals} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="injuries" className="label">Injuries:</label>
-          <input type="text" id="injuries" name="injuries" value={formData.injuries} onChange={handleChange} className="input-field" />
+          <input type="text" id="injuries" name="injuries" value={formData.injuries} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="preferences" className="label">Preferences:</label>
-          <input type="text" id="preferences" name="preferences" value={formData.preferences} onChange={handleChange} className="input-field" />
+          <input type="text" id="preferences" name="preferences" value={formData.preferences} onChange={handleChange} className="input-field2" />
         </div>
         <div className="form-group">
           <label htmlFor="restrictions" className="label">Restrictions:</label>
-          <input type="text" id="restrictions" name="restrictions" value={formData.restrictions} onChange={handleChange} className="input-field" />
+          <input type="text" id="restrictions" name="restrictions" value={formData.restrictions} onChange={handleChange} className="input-field2" />
         </div>
         <button type="submit" className="submit-btn">Submit</button>
       </form>

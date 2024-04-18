@@ -34,7 +34,7 @@
   
   .delete-btn {
     padding: 10px 20px;
-    background-color: #ff6b6b;
+    background-color: rgb(252, 103, 50);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -43,6 +43,6 @@
   }
   
   .delete-btn:hover {
-    background-color: #ff5252;
+    background-color: #6dbdff;
   }
   

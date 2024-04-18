@@ -22,15 +22,17 @@
     margin-bottom: 5px;
   }
   
-  .input-field {
+  .input-field2 {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
+    background-color: rgb(1, 151, 151);
+    color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 19px;
   }
   
-  .input-field:focus {
+  .input-field2:focus {
     outline: none;
     border-color: #6dbdff;
   }
@@ -47,6 +49,6 @@
   }
   
   .submit-btn:hover {
-    background-color: #4ca5ff;
+    background-color: rgb(252, 103, 50);
   }
   

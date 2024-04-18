@@ -38,6 +38,14 @@ const ProfileList = () => {
         <div className="profile-item" key={profile._id}>
           <p><strong>Name:</strong> {profile.name}</p>
           <p><strong>Contact:</strong> {profile.contact}</p>
+          <p><strong>Email:</strong> {profile.email}</p>
+          <p><strong>Age:</strong> {profile.age}</p>
+          <p><strong>Weight:</strong> {profile.weight}</p>
+          <p><strong>Height:</strong> {profile.height}</p>
+          <p><strong>Goals:</strong> {profile.goals}</p>
+          <p><strong>Injuries:</strong> {profile.injuries}</p>
+          <p><strong>Preferences:</strong> {profile.preferences}</p>
+          <p><strong>Restrictions:</strong> {profile.restrictions}</p>
           <button className="delete-btn" onClick={() => handleDelete(profile._id)}>Delete</button>
           <hr className="profile-divider" />
         </div>
