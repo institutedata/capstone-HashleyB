@@ -10,7 +10,7 @@ const Chat = () => {
     if (inputText.trim() !== '') {
       const newMessage = {
         text: inputText.trim(),
-        sender: 'user', // Assuming user sends the message
+        sender: 'user', 
         timestamp: new Date().toISOString()
       };
       setMessages([...messages, newMessage]);

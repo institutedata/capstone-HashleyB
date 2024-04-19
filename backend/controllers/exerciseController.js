@@ -1,5 +1,5 @@
 "use strict";
-const Models = require("../models"); // matches index.js
+const Models = require("../models"); 
 
 const getExercises = (res) => {
  // finds all exercises

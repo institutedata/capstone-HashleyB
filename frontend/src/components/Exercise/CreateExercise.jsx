@@ -19,7 +19,6 @@ const CreateExercise = () => {
     axios.post("http://localhost:8080/exercise/create", exercise)
       .then(response => {
         console.log("Exercise created successfully:", response.data.data);
-        // Optionally, you can redirect the user or perform any other action after creating the exercise
       })
       .catch(error => {
         console.error("Error creating exercise:", error);

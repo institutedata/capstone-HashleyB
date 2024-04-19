@@ -10,11 +10,12 @@ import Planner from "./pages/Planner/Planner";
 import Navbar from "./components/Navbar/Navbar";
 import ProfileList from "./components/Contacts/ProfileList";
 import TrainerProfile from "./pages/TrainerProfile/TrainerProfile";
+import FitnessChallenges from "./pages/FitChallenge/FitnessChallenges";
 import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  // State to track the current mode
+  
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Function to toggle between light mode and dark mode
@@ -25,13 +26,13 @@ function App() {
     localStorage.setItem('isDarkMode', JSON.stringify(newMode));
   };
 
-  // Load mode preference from local storage on component mount
+  
   useEffect(() => {
     const savedMode = JSON.parse(localStorage.getItem('isDarkMode'));
     if (savedMode !== null) {
       setIsDarkMode(savedMode);
     }
-  }, []); // Run only on component mount
+  }, []);
 
   // Apply dark mode styles if enabled
   useEffect(() => {
@@ -40,7 +41,7 @@ function App() {
     } else {
       document.documentElement.classList.remove('dark-mode');
     }
-  }, [isDarkMode]); // Run whenever isDarkMode changes
+  }, [isDarkMode]); 
 
   return (
     <main>
@@ -57,7 +58,7 @@ function App() {
         <Route path="/planner" element={<Planner />} />
         <Route path="/contacts" element={<ProfileList />} />
         <Route path="/trainer-profile" element={<TrainerProfile />} />
-        {/* Note: Settings component is not included here */}
+        <Route path="/challenges" element={<FitnessChallenges />} />
       </Routes>
     </main>
   );

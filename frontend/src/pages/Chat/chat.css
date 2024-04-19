@@ -47,7 +47,6 @@
   
   .input-field:focus {
     outline: none;
-    border-color: orangered;
   }
   
   .send-btn {
@@ -61,6 +60,6 @@
   }
   
   .send-btn:hover {
-    background-color: #65aef7;
+    background-color: #ff5757;
   }
   

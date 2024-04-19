@@ -1,4 +1,3 @@
-// controllers/clientProfileController.js
 const ClientProfile = require("../models/clientProfile");
 
 const createClientProfile = (req, res) => {

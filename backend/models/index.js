@@ -1,6 +1,7 @@
 module.exports = {
-    User: require("./user"),
-    Exercise: require("./exercise"),
-    ClientProfile: require("./clientProfile"),
-    TrainingSession: require("./trainingSession")
+  User: require("./user"),
+  Exercise: require("./exercise"),
+  ClientProfile: require("./clientProfile"),
+  Session: require("./session"),
+  Challenge: require("./challenge"),
 };

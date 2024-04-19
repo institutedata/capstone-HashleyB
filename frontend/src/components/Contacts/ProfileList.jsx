@@ -23,7 +23,6 @@ const ProfileList = () => {
     axios.delete(`http://localhost:8080/client-profile/${id}`)
       .then(response => {
         console.log("Profile deleted successfully:", response.data);
-        // After deleting, fetch the updated list of profiles
         fetchProfiles();
       })
       .catch(error => {

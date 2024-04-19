@@ -9,14 +9,14 @@ const Cards = () => {
                 <ul className="cards__items">
                     <CardItem 
                     src="src/images/deadlift.jpg"
-                    text="Explore the workout library and create your own workouts"
+                    text="Create and manage your clients' exercise routines"
                     label='Fitness'
                     path='/fitness'
                     />
                     <CardItem 
                     src="src/images/pt.webp"
-                    text="Add new profiles and manage your existing ones"  
-                    label='Clients'
+                    text="Add new profiles with clients' information and goals"  
+                    label='Client forms'
                     path='/clients'
                     />
                 </ul>

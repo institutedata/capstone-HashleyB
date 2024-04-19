@@ -3,5 +3,6 @@ module.exports = {
     authController: require("./authController"),
     exerciseController: require("./exerciseController"),
     clientProfileController: require("./clientProfileController"),
-    trainingSessionController: require("./trainingSessionController"),
+    sessionController: require("./sessionController"),
+    challengeController: require("./challengeController"),
 };

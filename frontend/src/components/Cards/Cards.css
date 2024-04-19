@@ -19,12 +19,12 @@
   .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
-    background-color: rgb(235, 234, 234);
+    background-color: white;
   }
   
   .cards__items {
     margin-bottom: 24px;
-    background-color: rgb(235, 234, 234);
+    background-color: white;
   }
   
   .cards__item {

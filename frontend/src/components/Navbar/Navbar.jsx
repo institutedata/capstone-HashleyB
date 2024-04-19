@@ -1,25 +1,25 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faAddressBook, faCaretUp, faCaretDown, faHome, faSun, faMoon, faWalking } from '@fortawesome/free-solid-svg-icons'; 
-import { useLocation } from 'react-router-dom'; // Import useLocation hook
+import { useLocation } from 'react-router-dom'; 
 
 import styles from "./styles.module.css";
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ toggleMode, isDarkMode }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const location = useLocation(); // Get the current location
+    const location = useLocation(); 
     
     const handleDropdownToggle = () => {
       setIsDropdownOpen(!isDropdownOpen);
     };
 
     const handleModeToggle = () => {
-      toggleMode(); // Toggle between light mode and dark mode
+      toggleMode(); 
     };
 
-    // Function to check if the dropdown should be displayed
+   
     const shouldDisplayDropdown = () => {
-      // Return true if the user is not on the login or sign up page and is logged in
       return location.pathname !== '/login' && location.pathname !== '/signup' && location.pathname !== '/logout';
     };
   
@@ -31,7 +31,7 @@ const Navbar = ({ toggleMode, isDarkMode }) => {
               Ironhash Fitness
               <FontAwesomeIcon icon={isDropdownOpen ? faCaretUp : faCaretDown} />
             </button>
-            {isDropdownOpen && shouldDisplayDropdown() && ( // Conditionally render dropdown content
+            {isDropdownOpen && shouldDisplayDropdown() && ( 
               <div className={styles.dropdown_content_vertical}>
                 <a href="/"><FontAwesomeIcon icon={faHome} />Home</a>
                 <a href="trainer-profile"><FontAwesomeIcon icon={faUser} /> Profile</a>

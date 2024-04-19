@@ -12,6 +12,8 @@ const SignUp = () => {
   });
 
   const [error, setError] = useState("");
+  // eslint-disable-next-line no-unused-vars
+  const [accountCreated, setAccountCreated] = useState(false); 
   const navigate = useNavigate();
 
   const handleChange = ({ currentTarget: input }) => {
@@ -21,8 +23,13 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8080/api/user";
+      const url = "http://localhost:8080/user";
       const { data: res } = await axios.post(url, data);
+      setAccountCreated(true); // Set account created message to true
+      setTimeout(() => {
+        setAccountCreated(false);
+        alert("Sign up successful!"); // Show alert box
+      }, 5000); // Hide message after 5 seconds
       navigate("/login");
       console.log(res);
     } catch (error) {
